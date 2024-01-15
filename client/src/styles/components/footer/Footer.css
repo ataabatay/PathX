@@ -1,1 +1,57 @@
-/*# sourceMappingURL=Footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap");
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: black;
+  color: #e6e6e6;
+  padding: 0em 4em;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-top .footer-logo {
+  display: flex;
+}
+footer .footer-top .footer-logo h1 {
+  font-size: 2em;
+  margin: 2em 1em;
+  align-self: center;
+}
+footer .footer-top .footer-logo p {
+  width: 40%;
+  font-size: 1em;
+  margin: 0;
+  align-self: center;
+}
+footer .footer-top .socials a img {
+  color: #e6e6e6;
+  margin: 10px;
+  width: 5vh;
+}
+footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+footer .footer-bottom .projectby a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+footer .footer-bottom .projectby a img {
+  width: 3vh;
+  height: 3vh;
+  margin: 0 2vh;
+}
+footer .footer-bottom .projectby a p {
+  margin: 0;
+  font-weight: 200;
+}
+footer .footer-bottom .projectby a p:hover {
+  font-weight: 600;
+}/*# sourceMappingURL=Footer.css.map */

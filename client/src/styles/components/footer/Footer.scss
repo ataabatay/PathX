@@ -1,0 +1,75 @@
+@import '../../global/variables.scss';
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: $text-primary-color;
+  color: $text-secondary-color;
+  padding: 0em 4em;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-logo {
+      display: flex;
+
+      h1 {
+        font-size: 2em;
+        margin: 2em 1em;
+        align-self: center;
+      }
+
+      p {
+        width: 40%;
+        font-size: 1em;
+        margin: 0;
+        align-self: center;
+      }
+    }
+
+    .socials {
+      a {
+        img {
+          color: $text-secondary-color;
+          margin: 10px;
+          width: 5vh
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2vh;
+
+    .projectby {
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $text-secondary-color;
+
+        img {
+          width: 3vh;
+          height: 3vh;
+          margin: 0 2vh;
+        }
+
+        p {
+          margin: 0;
+          font-weight: 200;
+
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+
+    }
+  }
+}
