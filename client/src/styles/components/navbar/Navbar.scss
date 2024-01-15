@@ -1,0 +1,33 @@
+@import '../../global/variables.scss';
+
+.navbar {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.125em 5em;
+
+  .navbar-logo {
+    h1 {
+      color: $text-color;
+      font-size: 2em;
+      font-weight: 900;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin-right: 10px;
+      font-size: 0.8em;
+      font-weight: 300;
+
+      &:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}

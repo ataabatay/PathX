@@ -1,26 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap');
+@import './variables.scss';
 
 * {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-stack;
+}
+
+html {
+  margin: 0;
 }
 
 body {
-  margin: 100;
-}
-
-h1 {
-  color: red;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 100%;
   margin: 0;
-
-  footer {
-    margin-top: auto;
-  }
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  background-repeat: no-repeat;
 }
