@@ -1,0 +1,65 @@
+[
+{
+  "model": "session_types.session_type",
+  "pk": 5,
+  "fields": {
+    "name": "Life Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 6,
+  "fields": {
+    "name": "Career Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 7,
+  "fields": {
+    "name": "Relationship Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 8,
+  "fields": {
+    "name": "Financial Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 9,
+  "fields": {
+    "name": "Wellness Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 10,
+  "fields": {
+    "name": "Executive Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 11,
+  "fields": {
+    "name": "Mindfulness Coaching"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 12,
+  "fields": {
+    "name": "Therapy"
+  }
+},
+{
+  "model": "session_types.session_type",
+  "pk": 13,
+  "fields": {
+    "name": "Parenting Coaching"
+  }
+}
+]

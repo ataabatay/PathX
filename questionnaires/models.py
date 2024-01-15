@@ -21,9 +21,9 @@ class Questionnaire(models.Model):
 
   question1answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS)
   question2answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS)
-  question3answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS) 
+  question3answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS)
   question4answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS)
-  question5answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS) 
+  question5answer = models.CharField(max_length=1, choices=POSSIBLE_ANSWERS)
 
   def __str__(self):
     return f"User -> {self.owner}"

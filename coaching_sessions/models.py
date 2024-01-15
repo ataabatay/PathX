@@ -2,14 +2,14 @@ from django.db import models
 
 # Create your models here.
 class Coaching_Session(models.Model):
-  user = models.ForeignKey(
+  owner = models.ForeignKey(
     to='users.User',
     on_delete=models.CASCADE,
     related_name='sessions'
   )
   session_type = models.ForeignKey(
     to='session_types.Session_Type',
-    on_delete=models.DO_NOTHING,
+    on_delete=models.PROTECT,
     blank=True,
     null=True,
     related_name='sessions'
