@@ -5,13 +5,12 @@
 
 html {
   margin: 0;
-  height: 100%;
 }
 
 body {
-  margin: 0;
   background: linear-gradient(to bottom, #bd63ef, #ffcf6c);
   background-repeat: no-repeat;
+  margin: 0;
   height: 100%;
 }
 
@@ -19,5 +18,5 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: inherit;
+  min-height: 100vh;
 }/*# sourceMappingURL=base.css.map */

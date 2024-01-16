@@ -1,0 +1,45 @@
+.faqs {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin: 1em 0 1em 100px;
+  }
+
+  .image {
+    img {
+      width: 50%;
+      border: none;
+      border-radius: 100px;
+      margin: 1em 0 1em 100px;
+    }
+  }
+
+  .questions-answers-accordion {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5em;
+
+    .accordion {
+      padding: 0 2em 0 2em;
+      width: 50vw;
+      --bs-accordion-bg: inherit;
+      --bs-accordion-border-color: inherit;
+
+      .accordion-item {
+        border: none;
+        --bs-accordion-active-color: black;
+
+        .accordion-header {
+          .accordion-button {
+            box-shadow: inherit !important;
+          }
+
+          .accordion-button[aria-expanded="true"] {
+            background-color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ nav {
         color: $text-primary-color;
         font-size: 3em;
         font-weight: 900;
-        margin: 0.25em 0;
+        margin: 0.5em 0;
       }
     }
   }
@@ -22,12 +22,14 @@ nav {
   ul {
     list-style: none;
     display: flex;
+    margin: 0;
 
     a {
       margin: 5px;
       font-size: 1em;
       font-weight: 300;
       text-decoration: none;
+      color: $text-primary-color;
 
       &:active {
         color: $text-primary-color;

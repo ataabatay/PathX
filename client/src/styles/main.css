@@ -1,3 +1,4 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap");
@@ -9,13 +10,12 @@
 
 html {
   margin: 0;
-  height: 100%;
 }
 
 body {
-  margin: 0;
   background: linear-gradient(to bottom, #bd63ef, #ffcf6c);
   background-repeat: no-repeat;
+  margin: 0;
   height: 100%;
 }
 
@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: inherit;
+  min-height: 100vh;
 }
 
 nav {
@@ -40,17 +40,19 @@ nav .navbar-logo a h1 {
   color: black;
   font-size: 3em;
   font-weight: 900;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
 }
 nav ul {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 nav ul a {
   margin: 5px;
   font-size: 1em;
   font-weight: 300;
   text-decoration: none;
+  color: black;
 }
 nav ul a:active {
   color: black;
@@ -79,7 +81,7 @@ footer .footer-top .footer-logo {
 }
 footer .footer-top .footer-logo h1 {
   font-size: 2em;
-  margin: 1em 1em;
+  margin: 1.5em 1em;
   align-self: center;
 }
 footer .footer-top .footer-logo p {
@@ -132,6 +134,7 @@ footer .footer-bottom .projectby a p:hover {
 .home .home-left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-grow: 1;
   padding: 0 3em;
 }
@@ -175,4 +178,39 @@ footer .footer-bottom .projectby a p:hover {
 .home .home-right .hero-image img {
   width: 80%;
   border-radius: 50px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+.about-us h1 {
+  margin: 1em 0 1em 100px;
+}
+.about-us .image img {
+  width: 50%;
+  border: none;
+  border-radius: 100px;
+  margin: 1em 0 1em 100px;
+}
+.about-us .questions-answers-accordion {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5em;
+}
+.about-us .questions-answers-accordion .accordion {
+  padding: 0 2em 0 2em;
+  width: 50vw;
+  --bs-accordion-bg: inherit;
+  --bs-accordion-border-color: inherit;
+}
+.about-us .questions-answers-accordion .accordion .accordion-item {
+  border: none;
+  --bs-accordion-active-color: black;
+}
+.about-us .questions-answers-accordion .accordion .accordion-item .accordion-header .accordion-button {
+  box-shadow: inherit !important;
+}
+.about-us .questions-answers-accordion .accordion .accordion-item .accordion-header .accordion-button[aria-expanded=true] {
+  background-color: inherit;
 }/*# sourceMappingURL=main.css.map */

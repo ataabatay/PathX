@@ -1,6 +1,5 @@
 import ZoomCall from '../assets/photos/zoomcall.svg'
 import { Link } from "react-router-dom"
-import '../styles/components/home/Home.scss'
 
 export default function Home() {
   return (
