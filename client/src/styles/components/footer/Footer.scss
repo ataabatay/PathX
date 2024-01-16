@@ -7,6 +7,7 @@ footer {
   background-color: $text-primary-color;
   color: $text-secondary-color;
   padding: 0em 4em;
+  margin-top: auto;
 
   .footer-top {
     display: flex;
@@ -18,7 +19,7 @@ footer {
 
       h1 {
         font-size: 2em;
-        margin: 2em 1em;
+        margin: 1em 1em;
         align-self: center;
       }
 
@@ -31,11 +32,13 @@ footer {
     }
 
     .socials {
+      display: flex;
+      flex-wrap: nowrap;
       a {
         img {
           color: $text-secondary-color;
           margin: 10px;
-          width: 5vh
+          width: 2vh;
         }
       }
     }
@@ -45,7 +48,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
 
     .projectby {
       a {
@@ -55,9 +58,9 @@ footer {
         color: $text-secondary-color;
 
         img {
-          width: 3vh;
-          height: 3vh;
-          margin: 0 2vh;
+          width: 2vh;
+          height: 2vh;
+          margin: 10px;
         }
 
         p {

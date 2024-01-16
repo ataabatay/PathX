@@ -1,0 +1,59 @@
+@import '../../global/variables.scss';
+
+.home {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  min-height: inherit;
+  text-align: center;
+
+  .home-left{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 3em;
+    .hero-title {
+      font-size: 4em;
+      font-weight: 400;
+      margin: 0;
+    }
+    .hero-p {
+      font-size: 1.5em;
+    }
+    .buttons {
+      text-align: center;
+      a {
+        margin: 10px;
+        .primary-button {
+          border: none;
+          border-radius: 10px;
+          padding: 1em;
+          width: 200px;
+          background-color: $text-primary-color;
+          color: $text-secondary-color;
+          font-size: 1.2em;
+
+          &:hover {
+            cursor: pointer;
+            background-color: lighten($text-primary-color, 30%); // Adjust the percentage as needed
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .home-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    .hero-image {
+      margin-top: auto 0;
+      img {
+        width: 80%;
+        border-radius: 50px;
+      }
+    }
+
+  }
+}

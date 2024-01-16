@@ -6,21 +6,29 @@ nav {
   justify-content: space-between;
   padding: 0.125em 5em;
 }
-nav .navbar-logo h1 {
+nav .navbar-logo a {
+  text-decoration: none;
+}
+nav .navbar-logo a h1 {
   color: black;
   font-size: 3em;
   font-weight: 900;
+  margin: 0.25em 0;
 }
 nav ul {
   list-style: none;
   display: flex;
 }
-nav ul li {
-  margin-right: 10px;
+nav ul a {
+  margin: 5px;
   font-size: 1em;
   font-weight: 300;
+  text-decoration: none;
 }
-nav ul li:hover {
+nav ul a:active {
+  color: black;
+}
+nav ul a:hover {
   font-weight: 700;
   cursor: pointer;
 }/*# sourceMappingURL=Navbar.css.map */

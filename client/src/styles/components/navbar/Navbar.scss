@@ -8,10 +8,14 @@ nav {
   padding: 0.125em 5em;
 
   .navbar-logo {
-    h1 {
-      color: $text-primary-color;
-      font-size: 3em;
-      font-weight: 900;
+    a {
+      text-decoration: none;
+      h1 {
+        color: $text-primary-color;
+        font-size: 3em;
+        font-weight: 900;
+        margin: 0.25em 0;
+      }
     }
   }
 
@@ -19,10 +23,15 @@ nav {
     list-style: none;
     display: flex;
 
-    li {
-      margin-right: 10px;
+    a {
+      margin: 5px;
       font-size: 1em;
       font-weight: 300;
+      text-decoration: none;
+
+      &:active {
+        color: $text-primary-color;
+      }
 
       &:hover {
         font-weight: 700;

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap");
+.home {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  min-height: inherit;
+  text-align: center;
+}
+.home .home-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 3em;
+}
+.home .home-left .hero-title {
+  font-size: 4em;
+  font-weight: 400;
+  margin: 0;
+}
+.home .home-left .hero-p {
+  font-size: 1.5em;
+}
+.home .home-left .buttons {
+  text-align: center;
+}
+.home .home-left .buttons a {
+  margin: 10px;
+}
+.home .home-left .buttons a .primary-button {
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  width: 200px;
+  background-color: black;
+  color: #e6e6e6;
+  font-size: 1.2em;
+}
+.home .home-left .buttons a .primary-button:hover {
+  cursor: pointer;
+  background-color: #4d4d4d;
+  font-weight: 600;
+}
+.home .home-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+.home .home-right .hero-image {
+  margin-top: auto 0;
+}
+.home .home-right .hero-image img {
+  width: 80%;
+  border-radius: 50px;
+}/*# sourceMappingURL=Home.css.map */

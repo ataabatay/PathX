@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import '../styles/components/footer/Footer.scss'
 import Instagram from '../assets/socials/instagram.svg'
 import Facebook from '../assets/socials/facebook.svg'
 import X from '../assets/socials/x.svg'
