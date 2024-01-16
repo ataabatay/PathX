@@ -14,25 +14,29 @@
     flex-grow: 1;
     padding: 0 3em;
     .hero-title {
-      font-size: 4em;
+      font-size: 3.5em;
       font-weight: 400;
-      margin: 0;
+      margin: 0 0 30px 0;
     }
     .hero-p {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     .buttons {
       text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
       a {
         margin: 10px;
         .primary-button {
           border: none;
           border-radius: 10px;
-          padding: 1em;
+          padding: 10px;
           width: 200px;
           background-color: $text-primary-color;
           color: $text-secondary-color;
-          font-size: 1.2em;
+          font-size: 18px;
 
           &:hover {
             cursor: pointer;

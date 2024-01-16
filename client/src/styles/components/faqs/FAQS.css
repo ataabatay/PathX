@@ -16,19 +16,35 @@
   justify-content: flex-end;
   margin: 5em;
 }
+.faqs .questions-answers-accordion .arrow-icon {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.faqs .questions-answers-accordion .arrow-icon img {
+  width: 50%;
+}
 .faqs .questions-answers-accordion .accordion {
   padding: 0 2em 0 2em;
   width: 50vw;
   --bs-accordion-bg: inherit;
   --bs-accordion-border-color: inherit;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 .faqs .questions-answers-accordion .accordion .accordion-item {
-  border: none;
+  border-bottom: 1px black solid;
+  border-radius: 0;
   --bs-accordion-active-color: black;
 }
 .faqs .questions-answers-accordion .accordion .accordion-item .accordion-header .accordion-button {
   box-shadow: inherit !important;
+  font-size: 0.7em;
+  font-weight: 500;
 }
 .faqs .questions-answers-accordion .accordion .accordion-item .accordion-header .accordion-button[aria-expanded=true] {
   background-color: inherit;
+}
+.faqs .questions-answers-accordion .accordion .accordion-item .accordion-body {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=FAQS.css.map */

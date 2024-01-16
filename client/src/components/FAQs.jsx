@@ -1,5 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 import FAQImage from '../assets/photos/faqs.svg';
+import ArrowIcon from '../assets/icons/arrow.svg';
 import '../styles/components/faqs/FAQS.scss';
 
 export default function FAQs() {
@@ -11,6 +12,9 @@ export default function FAQs() {
           <img src={FAQImage} alt="faqs-image" />
         </div>
         <div className="questions-answers-accordion">
+          <div className="arrow-icon">
+            <img src={ArrowIcon} alt="" />
+          </div>
           <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header>What can I expect from my coach?</Accordion.Header>

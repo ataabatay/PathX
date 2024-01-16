@@ -20,24 +20,41 @@
     justify-content: flex-end;
     margin: 5em;
 
+    .arrow-icon {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 50%;
+      }
+    }
+
     .accordion {
       padding: 0 2em 0 2em;
       width: 50vw;
       --bs-accordion-bg: inherit;
       --bs-accordion-border-color: inherit;
-
+      font-size: 1.2em;
+      font-weight: 300;
+      
       .accordion-item {
-        border: none;
+        border-bottom: 1px black solid;
+        border-radius: 0;
         --bs-accordion-active-color: black;
-
+        
         .accordion-header {
           .accordion-button {
             box-shadow: inherit !important;
+            font-size: 0.7em;
+            font-weight: 500;
           }
 
           .accordion-button[aria-expanded="true"] {
             background-color: inherit;
           }
+        }
+        .accordion-body {
+          margin-bottom: 20px;
         }
       }
     }
