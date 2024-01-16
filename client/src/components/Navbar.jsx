@@ -4,7 +4,7 @@ export default function Navbar() {
 
   return (
     <>
-      <navbar>
+      <nav>
         <div className="navbar-logo">
           <h1>PathX</h1>
         </div>
@@ -18,7 +18,7 @@ export default function Navbar() {
             <li>Login</li>
           </ul>
         </div>
-      </navbar>
+      </nav>
     </>
   )
 }
