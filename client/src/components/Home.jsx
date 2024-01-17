@@ -1,3 +1,4 @@
+import '../styles/components/home/Home.css'
 import ZoomCall from '../assets/photos/zoomcall.svg'
 import { Link } from "react-router-dom"
 

@@ -1,7 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import FAQImage from '../assets/photos/faqs.svg';
 import ArrowIcon from '../assets/icons/arrow.svg';
-import '../styles/components/faqs/FAQS.scss';
+import '../styles/components/faqs/FAQS.css';
 
 export default function FAQs() {
   return (
