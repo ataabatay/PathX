@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;700&display=swap");
+.date-time-picker {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  margin-bottom: 10em;
+}
+.date-time-picker h1 {
+  font-size: 1.5em;
+}
+.date-time-picker .datepicker,
+.date-time-picker .timepicker {
+  margin: 2em;
+}
+.date-time-picker #next-button {
+  margin-top: 4em;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  background-color: black;
+  color: #e6e6e6;
+}
+.date-time-picker #next-button:hover {
+  cursor: pointer;
+  background-color: #4d4d4d;
+  font-weight: 600;
+}/*# sourceMappingURL=Datetime.css.map */

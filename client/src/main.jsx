@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { sendSupportMessage } from './utils/actions.js';
+import { createCoachingSession, sendSupportMessage } from './utils/actions.js';
 
 // Styles Imports
 import './styles/main.css'
@@ -20,6 +20,9 @@ import MySessions from './components/MySessions.jsx'
 import Questionnaire from './components/Questionnaire.jsx'
 import Register from './components/Register.jsx'
 import SessionType from './components/SessionType.jsx'
+
+// Loader imports
+import { getSessionTypes } from './utils/loaders.js';
 
 const router = createBrowserRouter(
   [
@@ -52,15 +55,17 @@ const router = createBrowserRouter(
           element: <Booking />,
           children: [
             {
-              path: 'booking/datetime',
+              path: '/booking/datetime',
               element: <DateTime />,
+              action: async ({ request }) => createCoachingSession(request)
             },
             {
-              path: 'booking/sessiontype',
+              path: '/booking/sessiontype',
               element: <SessionType />,
+              loader: getSessionTypes,
             },
             {
-              path: 'booking/coach',
+              path: '/booking/coach',
               element: <Coach />,
             },
           ]

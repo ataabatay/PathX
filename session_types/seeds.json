@@ -3,63 +3,72 @@
   "model": "session_types.session_type",
   "pk": 5,
   "fields": {
-    "name": "Life Coaching"
+    "name": "Life Coaching",
+    "brief": "Comprehensive support for personal growth, goal achievement, and overall life fulfillment."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 6,
   "fields": {
-    "name": "Career Coaching"
+    "name": "Career Coaching",
+    "brief": "Strategic guidance for career development, goal-setting, and achieving professional success."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 7,
   "fields": {
-    "name": "Relationship Coaching"
+    "name": "Relationship Coaching",
+    "brief": "Nurturing healthy connections, providing tools to strengthen relationships and resolve conflicts."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 8,
   "fields": {
-    "name": "Financial Coaching"
+    "name": "Financial Coaching",
+    "brief": "Personalized guidance to achieve financial goals, manage budgets, and build a secure financial future."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 9,
   "fields": {
-    "name": "Wellness Coaching"
+    "name": "Wellness Coaching",
+    "brief": "Holistic support for physical and mental well-being, fostering a balanced and healthy lifestyle."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 10,
   "fields": {
-    "name": "Executive Coaching"
+    "name": "Executive Coaching",
+    "brief": "Tailored coaching to enhance leadership skills, decision-making, and overall professional performance."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 11,
   "fields": {
-    "name": "Mindfulness Coaching"
+    "name": "Mindfulness Coaching",
+    "brief": "Cultivating mindfulness practices for improved focus, stress reduction, and mental well-being."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 12,
   "fields": {
-    "name": "Therapy"
+    "name": "Therapy",
+    "brief": "Emotional support and professional counseling to navigate and overcome life challenges."
   }
 },
 {
   "model": "session_types.session_type",
   "pk": 13,
   "fields": {
-    "name": "Parenting Coaching"
+    "name": "Parenting Coaching",
+    "brief": "Expert guidance for effective parenting strategies and fostering positive parent-child relationships."
   }
 }
 ]

@@ -4,6 +4,7 @@
   "pk": 3,
   "fields": {
     "name": "Emily Turner",
+    "brief": "Specializes in Life, Career, and Relationship Coaching to help individuals achieve balance and fulfillment.",
     "session_types": [
       5,
       6,
@@ -16,6 +17,7 @@
   "pk": 4,
   "fields": {
     "name": "Alex Reynolds",
+    "brief": "Offers sessions in Life, Career, and Relationship Coaching, guiding clients towards personal and professional success.",
     "session_types": [
       5,
       6,
@@ -28,6 +30,7 @@
   "pk": 5,
   "fields": {
     "name": "Jordan Mitchell",
+    "brief": "Focused on Career Coaching, Jordan assists clients in navigating their professional paths to reach their full potential.",
     "session_types": [
       6
     ]
@@ -38,6 +41,7 @@
   "pk": 6,
   "fields": {
     "name": "Morgan Bennett",
+    "brief": "Specializing in Wellness, Executive, and Mindfulness Coaching, Morgan empowers clients to enhance overall well-being and leadership skills.",
     "session_types": [
       9,
       10,
@@ -50,6 +54,7 @@
   "pk": 7,
   "fields": {
     "name": "Serena Adams",
+    "brief": "Provides sessions in Financial, Wellness, Executive, Mindfulness, and Therapy, offering comprehensive support for a holistic approach to life.",
     "session_types": [
       8,
       9,
@@ -64,6 +69,7 @@
   "pk": 8,
   "fields": {
     "name": "Ethan Lawson",
+    "brief": "Offers Mindfulness, Therapy, and Parenting Coaching to address mental well-being and family dynamics.",
     "session_types": [
       11,
       12,
@@ -76,6 +82,7 @@
   "pk": 9,
   "fields": {
     "name": "Olivia Harper",
+    "brief": "Specializes in Financial, Wellness, Executive, and Mindfulness Coaching, promoting a balanced and prosperous lifestyle.",
     "session_types": [
       8,
       9,
@@ -89,6 +96,7 @@
   "pk": 10,
   "fields": {
     "name": "Carter Wells",
+    "brief": "A versatile coach covering a wide range of session types including Career, Relationship, Executive, Mindfulness, and Therapy.",
     "session_types": [
       6,
       7,
@@ -106,6 +114,7 @@
   "pk": 11,
   "fields": {
     "name": "Natalie Greene",
+    "brief": "Focuses on Therapy and Parenting Coaching, providing support in emotional well-being and effective parenting strategies.",
     "session_types": [
       12,
       13
@@ -117,6 +126,7 @@
   "pk": 12,
   "fields": {
     "name": "Zachary Rivers",
+    "brief": "Specializes in Career, Relationship, and Executive Coaching to guide clients in personal and professional growth.",
     "session_types": [
       6,
       7,
@@ -129,6 +139,7 @@
   "pk": 13,
   "fields": {
     "name": "Victoria Sterling",
+    "brief": "Offers Financial, Executive, and Therapy sessions, addressing both financial success and mental well-being.",
     "session_types": [
       8,
       10,
@@ -141,6 +152,7 @@
   "pk": 14,
   "fields": {
     "name": "Harrison Black",
+    "brief": "Specializes in Life, Wellness, and Therapy Coaching, helping clients achieve a balanced and fulfilling life.",
     "session_types": [
       5,
       10,
@@ -153,6 +165,7 @@
   "pk": 15,
   "fields": {
     "name": "Maya Tran",
+    "brief": "Provides sessions in Financial, Wellness, Executive, Mindfulness, Therapy, and Parenting Coaching, offering comprehensive support.",
     "session_types": [
       8,
       9,
@@ -168,6 +181,7 @@
   "pk": 16,
   "fields": {
     "name": "Adrian Foster",
+    "brief": "Focuses on Relationship, Therapy, and Parenting Coaching, helping clients build and maintain healthy connections.",
     "session_types": [
       7,
       12,
@@ -180,6 +194,7 @@
   "pk": 17,
   "fields": {
     "name": "Gabriella Sanchez",
+    "brief": "Offers Career, Financial, Wellness, and Mindfulness Coaching to support clients in various aspects of life.",
     "session_types": [
       6,
       8,
@@ -193,6 +208,7 @@
   "pk": 18,
   "fields": {
     "name": "Derek Marshall",
+    "brief": "Specializes in Financial, Wellness, Executive, and Mindfulness Coaching, promoting a well-rounded and successful life.",
     "session_types": [
       8,
       9,
@@ -206,6 +222,7 @@
   "pk": 19,
   "fields": {
     "name": "Rachel Thompson",
+    "brief": "Provides Career, Relationship, Executive, Mindfulness, and Wellness Coaching, addressing various aspects of personal and professional development.",
     "session_types": [
       6,
       7,
@@ -220,6 +237,7 @@
   "pk": 20,
   "fields": {
     "name": "Christopher Lewis",
+    "brief": "Specializes in Executive, Mindfulness, Therapy, and Parenting Coaching, guiding clients towards leadership and emotional well-being.",
     "session_types": [
       10,
       11,
@@ -233,6 +251,7 @@
   "pk": 21,
   "fields": {
     "name": "Jasmine Bennett",
+    "brief": "Offers Wellness, Executive, Mindfulness, Therapy, and Parenting Coaching, providing holistic support for overall well-being.",
     "session_types": [
       9,
       10,
@@ -247,6 +266,7 @@
   "pk": 22,
   "fields": {
     "name": "Leo Rodriguez",
+    "brief": "Specializes in Life, Career, Wellness, and Therapy Coaching, guiding clients towards a balanced and fulfilling life.",
     "session_types": [
       5,
       6,

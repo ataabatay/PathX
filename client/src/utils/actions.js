@@ -7,3 +7,10 @@ export async function sendSupportMessage(request){
     validateStatus: () => true
   })
 }
+
+export async function createCoachingSession(request){
+  const data = await formToObj(request)
+  return await axios.post('/api/coaching_sessions/', data, {
+    validateStatus: () => true
+  })
+}

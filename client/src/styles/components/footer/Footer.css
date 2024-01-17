@@ -15,10 +15,10 @@ footer .footer-top {
 }
 footer .footer-top .footer-logo {
   display: flex;
+  margin: 1.5em 1em;
 }
 footer .footer-top .footer-logo h1 {
   font-size: 2em;
-  margin: 1.5em 1em;
   align-self: center;
 }
 footer .footer-top .footer-logo p {

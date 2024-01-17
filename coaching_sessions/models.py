@@ -10,15 +10,20 @@ class Coaching_Session(models.Model):
   session_type = models.ForeignKey(
     to='session_types.Session_Type',
     on_delete=models.PROTECT,
-    related_name='sessions'
+    related_name='sessions',
+    blank=True,
+    null=True
   )
   coach = models.ForeignKey(
     to='coaches.Coach',
     on_delete=models.DO_NOTHING,
-    related_name='sessions'
+    related_name='sessions',
+    blank=True,
+    null=True
   )
-  scheduled_datetime = models.DateTimeField()
+  scheduled_date = models.DateField()
+  scheduled_time = models.TimeField()
   upcoming = models.BooleanField(default=True)
 
   def __str__(self):
-    return f'Coachee: {self.owner} @ {self.scheduled_datetime}: {self.session_type} - {self.coach}'
+    return f'Coachee: {self.owner} @ {self.scheduled_date}: {self.session_type} - {self.coach}'

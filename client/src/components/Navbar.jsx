@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="navbar-links">
           <ul>
             <Link to={'/mysessions'}>My Sessions</Link>
-            <Link to={'/booking'}>Book</Link>
+            <Link to={'/booking/datetime'}>Book</Link>
             <Link to={'/about'}>About us</Link>
             <Link to={'/faqs'}>FAQ</Link>
             <Link to={'/contact'}>Contact us</Link>
