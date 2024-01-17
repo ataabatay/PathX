@@ -23,4 +23,5 @@ urlpatterns = [
     path('api/coaches/', include('coaches.urls')),
     path('api/coaching_sessions/', include('coaching_sessions.urls')),
     path('api/auth/', include('users.urls')),
+    path('api/contact/', include('supportmessages.urls')),
 ]

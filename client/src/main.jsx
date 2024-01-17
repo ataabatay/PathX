@@ -2,6 +2,7 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { sendSupportMessage } from './utils/actions.js';
 
 // Styles Imports
 import './styles/main.css'
@@ -75,6 +76,7 @@ const router = createBrowserRouter(
         {
           path: '/contact',
           element: <Contact />,
+          action: async ({ request }) => sendSupportMessage(request)
         },
       ]
     }

@@ -184,6 +184,149 @@ footer .footer-bottom .projectby a p:hover {
   border-radius: 50px;
 }
 
+.aboutus {
+  width: 90%;
+  align-self: center;
+}
+.aboutus .aboutus-top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+  align-items: start;
+}
+.aboutus .aboutus-top .left {
+  flex-grow: 1;
+  width: 30%;
+  padding: 3em;
+}
+.aboutus .aboutus-top .left .title {
+  margin: 0;
+  width: 80%;
+}
+.aboutus .aboutus-top .right {
+  flex-grow: 1;
+  width: 40%;
+  padding: 3em;
+}
+.aboutus .aboutus-top .right .accordion {
+  padding: 0 2em 0 2em;
+  width: 50vw;
+  --bs-accordion-bg: inherit;
+  --bs-accordion-border-color: inherit;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.aboutus .aboutus-top .right .accordion .accordion-item {
+  border-bottom: 1px black solid;
+  border-radius: 0;
+  --bs-accordion-active-color: black;
+}
+.aboutus .aboutus-top .right .accordion .accordion-item .accordion-header .accordion-button {
+  box-shadow: inherit !important;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+.aboutus .aboutus-top .right .accordion .accordion-item .accordion-header .accordion-button[aria-expanded=true] {
+  background-color: inherit;
+}
+.aboutus .aboutus-top .right .accordion .accordion-item .accordion-body {
+  margin-bottom: 20px;
+}
+.aboutus .aboutus-middle .middletop {
+  display: flex;
+  flex-direction: column;
+}
+.aboutus .aboutus-middle .middletop h1 {
+  text-align: center;
+  margin: 2em;
+}
+.aboutus .aboutus-middle .middletop .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.aboutus .aboutus-middle .middletop .content .middleftimg img {
+  width: 40em;
+  border-radius: 30% 20% 30% 70%/150% 60% 190%;
+}
+.aboutus .aboutus-middle .middletop .content .special-sauce {
+  width: 50%;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.aboutus .aboutus-middle .middletop .content .special-sauce .special-sauce-title {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.aboutus .aboutus-middle .middletop .content .special-sauce .special-sauce-text {
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.7em;
+  margin: 0;
+}
+.aboutus .aboutus-middle .middlebottom {
+  display: flex;
+  align-items: center;
+}
+.aboutus .aboutus-middle .middlebottom .left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.aboutus .aboutus-middle .middlebottom .left .special-sauce {
+  width: 80%;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-bottom: 5em;
+}
+.aboutus .aboutus-middle .middlebottom .left .special-sauce .special-sauce-title {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.aboutus .aboutus-middle .middlebottom .left .special-sauce .special-sauce-text {
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.7em;
+  margin: 0;
+}
+.aboutus .aboutus-middle .middlebottom .right {
+  flex-grow: 1;
+}
+.aboutus .aboutus-middle .middlebottom .right img {
+  width: 30vw;
+}
+.aboutus .aboutus-testimonials {
+  margin-bottom: 5em;
+}
+.aboutus .aboutus-testimonials h1 {
+  text-align: center;
+  margin: 2em;
+}
+.aboutus .aboutus-testimonials .testimonials {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.aboutus .aboutus-testimonials .testimonials .single-testimonial {
+  width: 40%;
+  margin: 2em;
+}
+.aboutus .aboutus-testimonials .testimonials .single-testimonial .top h2 {
+  font-size: 2em;
+}
+.aboutus .aboutus-testimonials .testimonials .single-testimonial .bottom {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+.aboutus .aboutus-testimonials .testimonials .single-testimonial .bottom img {
+  width: 20%;
+  border-radius: 100%;
+  margin: 1em;
+}
+
 .faqs {
   display: flex;
   flex-direction: column;
@@ -233,4 +376,9 @@ footer .footer-bottom .projectby a p:hover {
 }
 .faqs .questions-answers-accordion .accordion .accordion-item .accordion-body {
   margin-bottom: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
