@@ -2,6 +2,8 @@
 .sessiontypes {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .sessiontypes h1 {
   font-size: 1.5em;
@@ -13,7 +15,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
-  margin: 0 auto;
 }
 .sessiontypes .session-type-cards .card {
   width: 250px;
@@ -27,8 +28,10 @@
 .sessiontypes .session-type-cards .card:hover {
   background-color: #f0f0f0;
 }
-.sessiontypes button {
-  margin: 3em;
+.sessiontypes .buttons {
+  padding: 3em 0;
+}
+.sessiontypes .buttons #next-button {
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -36,7 +39,7 @@
   background-color: black;
   color: #e6e6e6;
 }
-.sessiontypes button:hover {
+.sessiontypes .buttons #next-button:hover {
   cursor: pointer;
   background-color: #4d4d4d;
   font-weight: 600;

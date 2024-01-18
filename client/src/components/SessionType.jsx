@@ -25,12 +25,14 @@ export default function SessionType() {
                 </Card.Body>
               </Card>
             )
-            })}
-              
+          })}
+
         </section>
-        <Link to='/booking/coach'>
-          <button id='next-button' value='Next'>Next</button>
-        </Link>
+        <div className="buttons">
+          <Link to='/booking/coach'>
+            <button id='next-button' value='Next'>Next</button>
+          </Link>
+        </div>
       </section>
 
     </>
