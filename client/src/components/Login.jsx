@@ -1,15 +1,18 @@
 import { Form, useActionData, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { setToken } from '../utils/helpers/common'
+import { useOutletContext } from 'react-router-dom'
 
 export default function Login() {
 
+  const [activeUser, setActiveUser] = useOutletContext()
   const res = useActionData()
   const navigate = useNavigate()
 
   useEffect(() => {
     if(res?.status === 200) {
       setToken(res.data.access)
+      setActiveUser(res.data.access)
       navigate('/mysessions')
     }
   },[navigate, res])

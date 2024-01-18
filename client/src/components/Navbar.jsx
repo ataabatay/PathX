@@ -1,16 +1,9 @@
+/* eslint-disable react/prop-types */
 import '../styles/components/navbar/Navbar.css'
 import { Link } from "react-router-dom"
-import { getToken, removeToken } from '../utils/helpers/common'
-import { useEffect, useState } from 'react'
+import { removeToken } from '../utils/helpers/common'
 
-export default function Navbar() {
-
-  const [activeUser, setActiveUser] = useState(null)
-
-  useEffect(() => {
-    const activeUserToken = getToken()
-    setActiveUser(activeUserToken)
-  }, [activeUser])
+export default function Navbar({activeUser, setActiveUser}) {
 
   const handleSignout = () => {
     removeToken()
