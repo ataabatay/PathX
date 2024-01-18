@@ -22,7 +22,7 @@ import Register from './components/Register.jsx'
 import SessionType from './components/SessionType.jsx'
 
 // Loader imports
-import { getCoaches, getSessionTypes } from './utils/loaders.js';
+import { getCoaches, getSessions, getSessionTypes } from './utils/loaders.js';
 
 const router = createBrowserRouter(
   [
@@ -48,8 +48,9 @@ const router = createBrowserRouter(
           action: async ({ request }) => loginUser(request)
         },
         {
-          path: '/mysessions',
+          path: '/mysessions/',
           element: <MySessions />,
+          loader: getSessions,
         },
         {
           path: '/booking',

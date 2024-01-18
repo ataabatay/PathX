@@ -1,0 +1,49 @@
+@import '../../global/variables.scss';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 1.5em;
+    margin: 3em;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    
+    
+    input {
+      outline: none;
+      border: none;
+      background-color: inherit;
+      gap: 0.5em;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      outline: none;
+      border: none;
+      background-color: inherit;
+      border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+    }
+    button {
+      margin-top: 2em;
+      align-self: center;
+      width: 200px;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      padding: 0.5em 2em;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f0f0f095;
+        color: black;
+      }
+    }
+
+  }
+}

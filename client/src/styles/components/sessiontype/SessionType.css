@@ -26,7 +26,8 @@
   transition: background-color 0.3s ease;
 }
 .sessiontypes .session-type-cards .card:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.5843137255);
+  cursor: pointer;
 }
 .sessiontypes .buttons {
   padding: 3em 0;

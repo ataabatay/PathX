@@ -37,11 +37,13 @@
           background-color: $text-primary-color;
           color: $text-secondary-color;
           font-size: 18px;
+          transition: background-color 0.3s ease;
 
           &:hover {
             cursor: pointer;
-            background-color: lighten($text-primary-color, 30%); // Adjust the percentage as needed
             font-weight: 600;
+            background-color: #f0f0f095;
+            color: black;
           }
         }
       }

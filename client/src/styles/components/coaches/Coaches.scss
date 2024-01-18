@@ -19,14 +19,33 @@
 
     .card {
       width: 200px;
+      margin: 5px;
+      background-color: inherit;
+      border: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f0f0f095;
+        opacity: 0.3;
+      }
 
       .card-body {
-        img {
-          width: 100px;
+        #round-img {
+          height: 160px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 300px;
+          margin-bottom: 1em;
         }
+
+        .card-title {
+          text-align: center;
+          font-size: 1em;
+        }
+
+
       }
     }
-  }
 
   button {
     margin: 3em;

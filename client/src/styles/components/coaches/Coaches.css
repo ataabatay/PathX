@@ -17,9 +17,25 @@
 }
 .select-coach .coach-cards .card {
   width: 200px;
+  margin: 5px;
+  background-color: inherit;
+  border: none;
+  transition: background-color 0.3s ease;
 }
-.select-coach .coach-cards .card .card-body img {
-  width: 100px;
+.select-coach .coach-cards .card:hover {
+  background-color: rgba(240, 240, 240, 0.5843137255);
+  opacity: 0.3;
+}
+.select-coach .coach-cards .card .card-body #round-img {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 300px;
+  margin-bottom: 1em;
+}
+.select-coach .coach-cards .card .card-body .card-title {
+  text-align: center;
+  font-size: 1em;
 }
 .select-coach button {
   margin: 3em;

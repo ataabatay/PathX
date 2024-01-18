@@ -3,11 +3,11 @@ import '../styles/components/navbar/Navbar.css'
 import { Link } from "react-router-dom"
 import { removeToken } from '../utils/helpers/common'
 
-export default function Navbar({activeUser, setActiveUser}) {
+export default function Navbar({activeUserId, setActiveUserId}) {
 
   const handleSignout = () => {
     removeToken()
-    setActiveUser(null)
+    setActiveUserId(null)
   }
 
   return (
@@ -18,7 +18,7 @@ export default function Navbar({activeUser, setActiveUser}) {
         </div>
         <div className="navbar-links">
           <ul>
-            {activeUser ? (
+            {activeUserId ? (
               <>
                 <Link to={'/mysessions'}>My Sessions</Link>
                 <Link to={'/booking/datetime'}>Book</Link>
