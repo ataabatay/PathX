@@ -22,7 +22,7 @@ import Register from './components/Register.jsx'
 import SessionType from './components/SessionType.jsx'
 
 // Loader imports
-import { getSessionTypes } from './utils/loaders.js';
+import { getCoaches, getSessionTypes } from './utils/loaders.js';
 
 const router = createBrowserRouter(
   [
@@ -67,6 +67,7 @@ const router = createBrowserRouter(
             {
               path: '/booking/coach',
               element: <Coach />,
+              loader: getCoaches,
             },
           ]
         },
