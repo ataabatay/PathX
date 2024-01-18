@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 User = get_user_model()
+from coaching_sessions.serializers.common import Coaching_SessionSerializer
 
 class UserSerializer(serializers.ModelSerializer):
   password = serializers.CharField(write_only=True)

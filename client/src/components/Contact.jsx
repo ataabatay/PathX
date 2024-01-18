@@ -22,7 +22,6 @@ export default function Contact() {
   const res = useActionData()
 
   useEffect(() => {
-    console.log(res)
     if (res?.status == 201) {
       setFormData({
         first_name: '',

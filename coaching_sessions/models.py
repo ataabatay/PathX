@@ -5,12 +5,12 @@ class Coaching_Session(models.Model):
   owner = models.ForeignKey(
     to='users.User',
     on_delete=models.CASCADE,
-    related_name='sessions'
+    related_name='coaching_sessions'
   )
   session_type = models.ForeignKey(
     to='session_types.Session_Type',
     on_delete=models.PROTECT,
-    related_name='sessions',
+    related_name='coaching_sessions',
     blank=True,
     null=True
   )
