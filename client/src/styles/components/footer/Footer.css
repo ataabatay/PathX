@@ -20,6 +20,7 @@ footer .footer-top .footer-logo {
 footer .footer-top .footer-logo h1 {
   font-size: 2em;
   align-self: center;
+  margin: 0 1em;
 }
 footer .footer-top .footer-logo p {
   width: 40%;

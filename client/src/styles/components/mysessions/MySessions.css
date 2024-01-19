@@ -1,0 +1,71 @@
+.mysessions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mysessions h1 {
+  font-size: 1.5em;
+  margin: 1.5em;
+  align-self: center;
+}
+.mysessions .activesessions {
+  width: 95%;
+  border-radius: 10px;
+  padding: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.mysessions .activesessions .uniquesession {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border-radius: 10px;
+  background-color: inherit;
+  transition: background-color 0.3s ease;
+  padding: 1em;
+}
+.mysessions .activesessions .uniquesession:hover {
+  background-color: rgba(240, 240, 240, 0.5843137255);
+}
+.mysessions .activesessions .uniquesession .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mysessions .activesessions .uniquesession .icons .editbutton {
+  background-color: inherit;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+.mysessions .activesessions .uniquesession .icons .editbutton:hover {
+  background-color: rgba(240, 240, 240, 0.5843137255);
+  cursor: pointer;
+}
+.mysessions .activesessions .uniquesession .icons .editbutton img {
+  width: 20px;
+  margin: 20px;
+}
+.mysessions .activesessions .uniquesession .icons .deletebutton {
+  background-color: inherit;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+.mysessions .activesessions .uniquesession .icons .deletebutton:hover {
+  background-color: red;
+  cursor: pointer;
+}
+.mysessions .activesessions .uniquesession .icons .deletebutton img {
+  width: 20px;
+  margin: 20px;
+}/*# sourceMappingURL=MySessions.css.map */
