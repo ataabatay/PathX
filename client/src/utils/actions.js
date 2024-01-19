@@ -28,6 +28,12 @@ export async function addSessionType(request, sessionId) {
   })
 }
 
+export async function deleteSession(request) {
+  const data = await formToObj(request)
+  console.log(data)
+  return data
+}
+
 export async function loginUser(request) {
   try {
     console.log(request)

@@ -1,8 +1,10 @@
-import { useEffect } from "react"
-import { useLoaderData } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { Form, useActionData, useLoaderData } from "react-router-dom"
 import '../styles/components/mysessions/MySessions.css'
 import EditButton from '../assets/icons/editicon.svg';
 import DeleteButton from '../assets/icons/deleteicon.svg';
+import axios from "axios";
+import { getToken } from "../utils/helpers/common";
 
 const options = {
   weekday: "long",
@@ -14,14 +16,31 @@ const options = {
 export default function MySessions() {
 
   const res = useLoaderData()
+  const actionData = useActionData()
   const coaches = res.coaches.data
   const session_types = res.sessionTypes.data
-  const sessions = res.sessions
+  const [sessions, setSessions] = useState(res.sessions);
 
   useEffect(() => {
     // console.log(res)
-    console.log(coaches[0].name)
+    console.log(actionData)
   }, [])
+
+  async function handleClick(e) {
+    const targetSessionId = parseInt(e.currentTarget.id)
+    console.log(targetSessionId)
+    try {
+      await axios.delete(`/api/coaching_sessions/${targetSessionId}`, {
+        headers: {
+          Authorization: `Bearer ${getToken()}`
+        }
+      })
+      setSessions(prevSessions => prevSessions.filter(session => session.id !== targetSessionId));
+    } catch (error) {
+      console.error("Error deleting session:", error);
+    }
+    return
+  }
 
   return (
     <>
@@ -39,12 +58,12 @@ export default function MySessions() {
                     {new Date(session.scheduled_date).toDateString()}, {session.scheduled_time}</p>
                 </div>
                 <div className="icons">
-                  <div className="editbutton">
+                  <button className="editbutton">
                     <img src={EditButton} alt="edit-button" />
-                  </div>
-                  <div className="deletebutton">
+                  </button>
+                  <button className="deletebutton" id={session.id} onClick={handleClick}>
                     <img src={DeleteButton} alt="delete-button" />
-                  </div>
+                  </button>
                 </div>
               </div>
             );

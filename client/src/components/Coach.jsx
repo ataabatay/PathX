@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useLoaderData } from "react-router-dom"
+import { Link, useLoaderData, useLocation } from "react-router-dom"
 import Card from 'react-bootstrap/Card';
 import '../styles/components/coaches/Coaches.css';
 import Modal from 'react-bootstrap/Modal';
@@ -10,12 +10,19 @@ import Image from 'react-bootstrap/Image';
 export default function Coach() {
 
   const allCoachesData = useLoaderData()
+  const { state: { session_type: { session_type } } } = useLocation()
+  const filteredCoaches = allCoachesData.data.filter(coach => {
+    return coach.session_types.some(type => type.id === session_type)
+  })
+
   const [modalShow, setModalShow] = useState(false);
   const [hoveredCardId, setHoveredCardId] = useState(null);
 
   useEffect(() => {
     console.log(allCoachesData.data)
-  }, [allCoachesData])
+    console.log(session_type)
+    console.log(filteredCoaches)
+  }, [allCoachesData, session_type, filteredCoaches])
 
   function handleHover(e) {
     const target = e.target
@@ -28,7 +35,6 @@ export default function Coach() {
       target.classList.add('hovered')
       setHoveredCardId(cardId)
     }
-    console.log(target)
   }
 
   return (
@@ -36,7 +42,7 @@ export default function Coach() {
       <section className="select-coach">
         <h1>Select a coach for your session...</h1>
         <section className="coach-cards">
-          {allCoachesData.data.map(coach => {
+          {filteredCoaches.map(coach => {
             return (
               < Card key={coach.id}>
                 <Card.Body
@@ -49,7 +55,7 @@ export default function Coach() {
                   <Card.Title>{coach.name}</Card.Title>
                 </Card.Body>
                 <div className="card-text">
-                  <Card.Text style={{display: 'none'}}>{coach.brief}</Card.Text>
+                  <Card.Text style={{ display: 'none' }}>{coach.brief}</Card.Text>
                 </div>
               </Card>
             )

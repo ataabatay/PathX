@@ -37,6 +37,7 @@
 
         .editbutton {
           background-color: inherit;
+          border: none;
           width: 40px;
           height: 40px;
           display: flex;
@@ -44,19 +45,15 @@
           justify-content: center;
           transition: background-color 0.3s ease;
           border-radius: 5px;
-
+          
           &:hover {
             background-color: #f0f0f095;
             cursor: pointer;
           }
-          
-          img {
-            width: 20px;
-            margin: 20px;
-          }
         }
         
         .deletebutton {
+          border: none;
           background-color: inherit;
           width: 40px;
           height: 40px;
@@ -69,11 +66,6 @@
           &:hover {
             background-color: red;
             cursor: pointer;
-          }
-
-          img {
-            width: 20px;
-            margin: 20px;
           }
         }
       }

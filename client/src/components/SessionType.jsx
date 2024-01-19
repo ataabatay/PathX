@@ -6,12 +6,12 @@ import '../styles/components/sessiontype/SessionType.css'
 export default function SessionType() {
 
   const res = useActionData()
-
   const sessionTypesData = useLoaderData()
-  const [selectedSessionType, setSelectedSessionType] = useState('')
-
   const navigate = useNavigate()
   const { sessionId } = useParams()
+
+  const [selectedSessionType, setSelectedSessionType] = useState('')
+
 
   // make session type selection
   function handleClick(e) {
@@ -31,7 +31,11 @@ export default function SessionType() {
   useEffect(() => {
     console.log(res)
     if (res?.status === 200) {
-      navigate(`/booking/${res.data.id}/coach`)
+      navigate(`/booking/${res.data.id}/coach`, {
+        state: {
+          session_type: selectedSessionType
+        }
+      })
     }
   }, [res, navigate])
 

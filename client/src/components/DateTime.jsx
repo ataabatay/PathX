@@ -29,15 +29,6 @@ export default function DateTime() {
       scheduled_time: `${e.$H}:${e.$m}`
     })
   }
-  // function handleClick() {
-  //   setTimeout(() => {
-  //     navigate('/booking/sessiontype',{
-  //       state: {
-  //         test: 'this is a test'
-  //       },
-  //     })
-  //   }, 500)
-  // }
 
   useEffect(() => {
     console.log(res)
