@@ -10,13 +10,11 @@ export default function DateTime() {
 
   const res = useActionData()
   const navigate = useNavigate()
-
   const [createSessionFormData, setCreateSessionFormData] = useState({
     scheduled_date: '',
     scheduled_time: '',
     owner: getActiveUser(),
   })
-
   function handleDateChange(e) {
     setCreateSessionFormData({
       ...createSessionFormData,
@@ -29,9 +27,7 @@ export default function DateTime() {
       scheduled_time: `${e.$H}:${e.$m}`
     })
   }
-
   useEffect(() => {
-    console.log(res)
     if (res?.status === 201) {
       navigate(`/booking/${res.data.id}/sessiontype`)
     }

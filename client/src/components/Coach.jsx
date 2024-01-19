@@ -30,6 +30,9 @@ export default function Coach() {
 
   useEffect(() => {
     console.log(selectedCoach)
+    console.log(allCoachesData)
+    console.log(filteredCoaches)
+    console.log(session_type)
   }, [selectedCoach, filteredCoaches])
 
 
