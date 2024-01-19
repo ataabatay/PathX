@@ -32,6 +32,9 @@
         cursor: pointer;
       }
     }
+    .card.selected {
+      background-color: #f0f0f095;
+    }
   }
   .buttons{
     padding: 3em 0;

@@ -18,6 +18,16 @@ export async function createCoachingSession(request) {
   })
 }
 
+export async function addSessionType(request, sessionId) {
+  const data = await formToObj(request)
+  return await axios.patch(`/api/coaching_sessions/${sessionId}/`, data, {
+    validateStatus: () => true,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    }
+  })
+}
+
 export async function loginUser(request) {
   try {
     console.log(request)

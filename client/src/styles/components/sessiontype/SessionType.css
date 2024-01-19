@@ -29,6 +29,9 @@
   background-color: rgba(240, 240, 240, 0.5843137255);
   cursor: pointer;
 }
+.sessiontypes .session-type-cards .card.selected {
+  background-color: rgba(240, 240, 240, 0.5843137255);
+}
 .sessiontypes .buttons {
   padding: 3em 0;
 }
