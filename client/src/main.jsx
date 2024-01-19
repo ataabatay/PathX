@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { addSessionType, createCoachingSession, deleteSession, loginUser, sendSupportMessage } from './utils/actions.js';
+import { addSessionType, createCoachingSession, loginUser, registerUser, sendSupportMessage } from './utils/actions.js';
 
 // Styles Imports
 import './styles/main.css'
@@ -41,6 +41,7 @@ const router = createBrowserRouter(
         {
           path: '/register',
           element: <Register />,
+          action: async ({ request }) => registerUser(request)
         },
         {
           path: '/login',
@@ -51,7 +52,6 @@ const router = createBrowserRouter(
           path: '/mysessions/',
           element: <MySessions />,
           loader: getSessions,
-          action: async ({ request }) => deleteSession(request)
         },
         {
           path: '/booking',

@@ -1,34 +1,20 @@
-import { useEffect, useState } from "react"
-import { Form, useActionData, useLoaderData } from "react-router-dom"
+import { useState } from "react"
+import {  useLoaderData } from "react-router-dom"
 import '../styles/components/mysessions/MySessions.css'
 import EditButton from '../assets/icons/editicon.svg';
 import DeleteButton from '../assets/icons/deleteicon.svg';
 import axios from "axios";
 import { getToken } from "../utils/helpers/common";
 
-const options = {
-  weekday: "long",
-  year: "long",
-  month: "long",
-  day: "long",
-};
-
 export default function MySessions() {
 
   const res = useLoaderData()
-  const actionData = useActionData()
   const coaches = res.coaches.data
   const session_types = res.sessionTypes.data
   const [sessions, setSessions] = useState(res.sessions);
 
-  useEffect(() => {
-    // console.log(res)
-    console.log(actionData)
-  }, [])
-
   async function handleClick(e) {
     const targetSessionId = parseInt(e.currentTarget.id)
-    console.log(targetSessionId)
     try {
       await axios.delete(`/api/coaching_sessions/${targetSessionId}`, {
         headers: {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useLoaderData, useLocation } from "react-router-dom"
+import { Link, useLoaderData, useLocation, useParams } from "react-router-dom"
 import Card from 'react-bootstrap/Card';
 import '../styles/components/coaches/Coaches.css';
 import Modal from 'react-bootstrap/Modal';
@@ -14,28 +14,24 @@ export default function Coach() {
   const filteredCoaches = allCoachesData.data.filter(coach => {
     return coach.session_types.some(type => type.id === session_type)
   })
-
+  const sessionId = useParams()
   const [modalShow, setModalShow] = useState(false);
-  const [hoveredCardId, setHoveredCardId] = useState(null);
+  const [selectedCoach, setSelectedCoach] = useState('')
+
+  function handleClick(e) {
+    const selectedCoachId = parseInt(e.currentTarget.id)
+    if (selectedCoach.id === selectedCoachId) {
+      setSelectedCoach(null)
+    } else {
+      setSelectedCoach(selectedCoachId)
+    }
+    console.log(e.currentTarget)
+  }
 
   useEffect(() => {
-    console.log(allCoachesData.data)
-    console.log(session_type)
-    console.log(filteredCoaches)
-  }, [allCoachesData, session_type, filteredCoaches])
+    console.log(selectedCoach)
+  }, [selectedCoach, filteredCoaches])
 
-  function handleHover(e) {
-    const target = e.target
-    const cardId = target.id
-
-    if (target.classList.contains('hovered')) {
-      target.classList.remove('hovered')
-      setHoveredCardId(null)
-    } else {
-      target.classList.add('hovered')
-      setHoveredCardId(cardId)
-    }
-  }
 
   return (
     <>
@@ -44,20 +40,20 @@ export default function Coach() {
         <section className="coach-cards">
           {filteredCoaches.map(coach => {
             return (
-              < Card key={coach.id}>
-                <Card.Body
-                  id={coach.id}
-                  onMouseEnter={handleHover}
-                  onMouseLeave={handleHover}
-                >
+              < Card
+                key={coach.id}
+                onClick={handleClick}
+                id={coach.id}
+                className={coach.id === (selectedCoach) ? 'selected' : ''}>
+                <Card.Body>
                   <div id="round-img"
                     style={{ backgroundImage: `url(${coach.image})` }}></div>
                   <Card.Title>{coach.name}</Card.Title>
-                </Card.Body>
                 <div className="card-text">
-                  <Card.Text style={{ display: 'none' }}>{coach.brief}</Card.Text>
+                  <Card.Text>{coach.brief}</Card.Text>
                 </div>
-              </Card>
+                </Card.Body>
+              </Card >
             )
           })
           }
@@ -67,14 +63,13 @@ export default function Coach() {
             id='next-button'
             value='Next'
             onClick={() => setModalShow(true)}>
-            Next
+            Create Session
           </button>
           <BookingConfirmationModal
             show={modalShow}
             onHide={() => setModalShow(false)}
           />
         </section>
-
       </section >
     </>
   )

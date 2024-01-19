@@ -28,12 +28,6 @@ export async function addSessionType(request, sessionId) {
   })
 }
 
-export async function deleteSession(request) {
-  const data = await formToObj(request)
-  console.log(data)
-  return data
-}
-
 export async function loginUser(request) {
   try {
     console.log(request)
@@ -45,4 +39,11 @@ export async function loginUser(request) {
     console.log(error)
     return error
   }
+}
+
+export async function registerUser(request){
+  const data = await formToObj(request)
+  return await axios.post('/api/auth/register/', data, {
+    validateStatus: () => true
+  })
 }

@@ -1,4 +1,4 @@
-import { Form, Link, useActionData, useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom"
+import { Form, useActionData, useLoaderData, useNavigate, useParams } from "react-router-dom"
 import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from "react";
 import '../styles/components/sessiontype/SessionType.css'
@@ -8,10 +8,7 @@ export default function SessionType() {
   const res = useActionData()
   const sessionTypesData = useLoaderData()
   const navigate = useNavigate()
-  const { sessionId } = useParams()
-
   const [selectedSessionType, setSelectedSessionType] = useState('')
-
 
   // make session type selection
   function handleClick(e) {
@@ -33,11 +30,11 @@ export default function SessionType() {
     if (res?.status === 200) {
       navigate(`/booking/${res.data.id}/coach`, {
         state: {
-          session_type: selectedSessionType
+          session_type: selectedSessionType,
         }
       })
     }
-  }, [res, navigate])
+  }, [res, navigate, selectedSessionType])
 
   return (
     <>
