@@ -24,9 +24,9 @@ export default function Login() {
         <h1>Log In</h1>
         <Form className='login-form' method='POST'>
           <label>Username</label>
-          <input type="text" className="username" name='username'/>
+          <input type="text" className="username" name='username' />
           <label>Password</label>
-          <input type="password" className="password" name='password'/>
+          <input type="password" className="password" name='password' />
           <button type='submit'>Login</button>
         </Form>
       </section>

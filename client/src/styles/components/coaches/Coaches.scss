@@ -23,13 +23,19 @@
       background-color: inherit;
       border: none;
       transition: background-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
 
       &:hover {
         background-color: #f0f0f095;
         opacity: 0.3;
+        cursor: pointer;
       }
 
       .card-body {
+        display: flex;
+        flex-direction: column;
+
         #round-img {
           height: 160px;
           background-size: cover;
@@ -41,14 +47,16 @@
         .card-title {
           text-align: center;
           font-size: 1em;
+          height: 40px;
         }
-
-
       }
     }
-
+    .card.selected {
+      background-color: #f0f0f095;
+    }
   }
-  .booking-confirmation {
+
+  form {
     button {
       margin: 3em;
       border: none;
@@ -57,7 +65,7 @@
       width: 200px;
       background-color: $text-primary-color;
       color: $text-secondary-color;
-      
+
       &:hover {
         cursor: pointer;
         background-color: lighten($text-primary-color, 30%); // Adjust the percentage as needed

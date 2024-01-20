@@ -9,9 +9,7 @@ export default function SessionType() {
   const sessionTypesData = useLoaderData()
   const navigate = useNavigate()
   const { sessionId } = useParams()
-
   const [selectedSessionType, setSelectedSessionType] = useState('')
-
 
   // make session type selection
   function handleClick(e) {

@@ -21,10 +21,17 @@
   background-color: inherit;
   border: none;
   transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 .select-coach .coach-cards .card:hover {
   background-color: rgba(240, 240, 240, 0.5843137255);
   opacity: 0.3;
+  cursor: pointer;
+}
+.select-coach .coach-cards .card .card-body {
+  display: flex;
+  flex-direction: column;
 }
 .select-coach .coach-cards .card .card-body #round-img {
   height: 160px;
@@ -36,8 +43,12 @@
 .select-coach .coach-cards .card .card-body .card-title {
   text-align: center;
   font-size: 1em;
+  height: 40px;
 }
-.select-coach .booking-confirmation button {
+.select-coach .coach-cards .card.selected {
+  background-color: rgba(240, 240, 240, 0.5843137255);
+}
+.select-coach form button {
   margin: 3em;
   border: none;
   border-radius: 10px;
@@ -46,7 +57,7 @@
   background-color: black;
   color: #e6e6e6;
 }
-.select-coach .booking-confirmation button:hover {
+.select-coach form button:hover {
   cursor: pointer;
   background-color: #4d4d4d;
   font-weight: 600;

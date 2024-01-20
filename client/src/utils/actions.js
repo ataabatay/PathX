@@ -28,6 +28,16 @@ export async function addSessionType(request, sessionId) {
   })
 }
 
+export async function addCoach(request, sessionId) {
+  const data = await formToObj(request)
+  return await axios.patch(`/api/coaching_sessions/${sessionId}/`, data, {
+    validateStatus: () => true,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    }
+  })
+}
+
 export async function deleteSession(request) {
   const data = await formToObj(request)
   console.log(data)
@@ -45,4 +55,11 @@ export async function loginUser(request) {
     console.log(error)
     return error
   }
+}
+
+export async function registerUser(request){
+  const data = await formToObj(request)
+  return await axios.post('/api/auth/register/', data, {
+    validateStatus: () => true
+  })
 }

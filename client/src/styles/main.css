@@ -84,6 +84,7 @@ footer .footer-top .footer-logo {
 footer .footer-top .footer-logo h1 {
   font-size: 2em;
   align-self: center;
+  margin: 0 1em;
 }
 footer .footer-top .footer-logo p {
   width: 40%;
@@ -165,11 +166,13 @@ footer .footer-bottom .projectby a p:hover {
   background-color: black;
   color: #e6e6e6;
   font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 .home .home-left .buttons a .primary-button:hover {
   cursor: pointer;
-  background-color: #4d4d4d;
   font-weight: 600;
+  background-color: rgba(240, 240, 240, 0.5843137255);
+  color: black;
 }
 .home .home-right {
   display: flex;
