@@ -26,7 +26,6 @@
 }
 .select-coach .coach-cards .card:hover {
   background-color: rgba(240, 240, 240, 0.5843137255);
-  opacity: 0.3;
   cursor: pointer;
 }
 .select-coach .coach-cards .card .card-body {
@@ -56,9 +55,4 @@
   width: 200px;
   background-color: black;
   color: #e6e6e6;
-}
-.select-coach form button:hover {
-  cursor: pointer;
-  background-color: #4d4d4d;
-  font-weight: 600;
 }/*# sourceMappingURL=Coaches.css.map */

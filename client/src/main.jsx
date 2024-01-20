@@ -17,7 +17,7 @@ import DateTime from './components/DateTime.jsx'
 import FAQs from './components/FAQs.jsx'
 import Login from './components/Login.jsx'
 import MySessions from './components/MySessions.jsx'
-import Questionnaire from './components/Questionnaire.jsx'
+// import Questionnaire from './components/Questionnaire.jsx'
 import Register from './components/Register.jsx'
 import SessionType from './components/SessionType.jsx'
 
@@ -34,10 +34,10 @@ const router = createBrowserRouter(
           path: '',
           element: <Home />,
         },
-        {
-          path: '/questionnaire',
-          element: <Questionnaire />,
-        },
+        // {
+        //   path: '/questionnaire',
+        //   element: <Questionnaire />,
+        // },
         {
           path: '/register',
           element: <Register />,

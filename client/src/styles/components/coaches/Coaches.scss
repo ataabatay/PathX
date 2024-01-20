@@ -28,7 +28,6 @@
 
       &:hover {
         background-color: #f0f0f095;
-        opacity: 0.3;
         cursor: pointer;
       }
 
@@ -65,12 +64,6 @@
       width: 200px;
       background-color: $text-primary-color;
       color: $text-secondary-color;
-
-      &:hover {
-        cursor: pointer;
-        background-color: lighten($text-primary-color, 30%); // Adjust the percentage as needed
-        font-weight: 600;
-      }
     }
   }
 }
