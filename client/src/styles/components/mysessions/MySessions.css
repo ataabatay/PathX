@@ -17,6 +17,7 @@
   flex-direction: column;
 }
 .mysessions .activesessions .uniquesession {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   width: 80%;

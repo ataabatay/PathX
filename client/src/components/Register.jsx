@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Form, useActionData, useNavigate } from "react-router-dom";
 import '../styles/components/register/Register.css'
 
@@ -6,12 +6,16 @@ export default function Register() {
 
   const res = useActionData()
   const navigate = useNavigate()
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     if (res?.status === 201) {
       navigate('/login')
-    }
-  },[res, navigate])
+    } 
+    // else if (res?.status === 400) {
+    //   setError('Passwords do not match.')
+    // }
+  }, [res, navigate])
 
   return (
     <>
@@ -30,9 +34,9 @@ export default function Register() {
           <input type="password" className="password" name='password' />
           <label>Password again</label>
           <input type="password" className="password_confirmation" name='password_confirmation' />
-          <button type='submit'>Login</button>
-          {res && <p className='danger'>{res.data.message}</p>}
+          <button type='submit'>Register</button>
         </Form>
+        {error && <p className='error-message' style={{ marginTop: '2em' }}>{error}</p>}
       </section>
     </>
   )
