@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Form, useActionData, useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
 import '../styles/components/mysessions/MySessions.css'
 import EditButton from '../assets/icons/editicon.svg';
 import DeleteButton from '../assets/icons/deleteicon.svg';
@@ -9,15 +9,11 @@ import { getToken } from "../utils/helpers/common";
 export default function MySessions() {
 
   const res = useLoaderData()
-  const actionData = useActionData()
   const coaches = res.coaches.data
   const session_types = res.sessionTypes.data
   const [sessions, setSessions] = useState(res.sessions)
 
-  useEffect(() => {
-    // console.log(res)
-    console.log(actionData)
-  }, [])
+  console.log(res)
 
   async function handleClick(e) {
     const targetSessionId = parseInt(e.currentTarget.id)
