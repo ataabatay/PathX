@@ -8,7 +8,7 @@ export async function getSessionTypes() {
 }
 
 export async function getCoaches(){
-  const allCoaches = await axios.get('/api/coaches')
+  const allCoaches = await axios.get('/api/coaches/')
   return allCoaches
 }
 

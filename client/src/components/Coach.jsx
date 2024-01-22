@@ -34,7 +34,7 @@ export default function Coach() {
       navigate(`/mysessions`)
     }
   }, [res, navigate])
-
+  
   return (
     <>
       <section className="select-coach">

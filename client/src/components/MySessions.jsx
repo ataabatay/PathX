@@ -23,7 +23,7 @@ export default function MySessions() {
     const targetSessionId = parseInt(e.currentTarget.id)
     console.log(targetSessionId)
     try {
-      await axios.delete(`/api/coaching_sessions/${targetSessionId}`, {
+      await axios.delete(`/api/coaching_sessions/${targetSessionId}/`, {
         headers: {
           Authorization: `Bearer ${getToken()}`
         }
